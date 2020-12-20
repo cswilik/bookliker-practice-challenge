@@ -37,6 +37,14 @@
         {
           "id": 6,
           "username": "steuber"
+        },
+        {
+          "id": 1,
+          "username": "pouros"
+        },
+        {
+          "id": 1,
+          "username": "pouros"
         }
       ]
     },
@@ -86,20 +94,7 @@
       "description": "Pocket Change Collective was born out of a need for space. Space to think. Space to connect. Space to be yourself. And this is your invitation to join us. 'Thank God we have Alok. And I'm learning a thing or two myself'--Billy Porter, Emmy award-winning actor, singer, and Broadway theater performer",
       "author": "Alok Vaid-Menon",
       "img_url": "https://books.google.com/books/content?id=hxGuDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 4,
-          "username": "ann"
-        },
-        {
-          "id": 8,
-          "username": "maverick"
-        }
-      ]
+      "users": 4
     },
     {
       "id": 6,
@@ -148,20 +143,7 @@
       "description": "In the searing pages of this classic autobiography, originally published in 1964, Malcolm X, the Muslim leader, firebrand, and anti-integrationist, tells the extraordinary story of his life and the growth of the Black Muslim movement. His fascinating perspective on the lies and limitations of the American Dream, and the inherent racism in a society that denies its nonwhite citizens the opportunity to dream, gives extraordinary insight into the most urgent issues of our own time. The Autobiography of Malcolm X stands as the definitive statement of a movement and a man whose work was never completed but whose message is timeless. It is essential reading for anyone who wants to understand America.",
       "author": "Malcolm X with Alex Haley",
       "img_url": "http://books.google.com/books/content?id=EtVfCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 9,
-          "username": "alex"
-        },
-        {
-          "id": 3,
-          "username": "marvin"
-        },
-        {
-          "id": 2,
-          "username": "auer"
-        }
-      ]
+      "users": 4
     },
     {
       "id": 9,
@@ -200,6 +182,10 @@
         {
           "id": 10,
           "username": "macejkovic"
+        },
+        {
+          "id": 1,
+          "username": "pouros"
         }
       ]
     },

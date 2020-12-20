@@ -44,24 +44,29 @@ function RenderBookShowPanel(book) {
     const likeButton = document.createElement('button')
     likeButton.textContent = "Like"
     likeButton.dataset.id = book.id
-    // likeButton.addEventListener('click', function(evt) {
-    //     evt.preventDefault()
-    //     usersArr = book.users
-    //     usersArr.push({"id":1, "username":"pouros"})
-    //     const id = evt.target.dataset.id
-    //     fetch(`http://localhost:3000/books/${id}`, {
-    //          headers:
-    //             { "Content-Type": "application/json" },
-    //             method: "PATCH",
-    //             body:
-    //                 JSON.stringify({users: usersArr})
-    //     })
-    //     .then(res => res.json())
-    //     .then(bookObj => {
-    //         bookObj.users
-    //     })
+    likeButton.addEventListener('click', function(evt) {
+        evt.preventDefault()
+        usersArr = book.users
+        usersArr.push({"id":1, "username":"pouros"})
+        const id = evt.target.dataset.id
+        fetch(`http://localhost:3000/books/${id}`, {
+            headers:
+                { "Content-Type": "application/json" },
+            method: "PATCH",
+            body:
+                JSON.stringify({users: usersArr})
+        })
+        .then(res => res.json())
+        .then(updatedBookObj => {
+            updatedBookObj.innerHTML = ""
+            updatedBookObj.users.forEach(user => {
+                const userLi = document.createElement('li')
+                userLi.textContent = user.username 
+                userUL.append(userLi)
+            })
+        })
 
-    // })
+    })
 
     
     divPanel.append(imgTag, titleHeader, subtitle, author, description, userUL, likeButton)
